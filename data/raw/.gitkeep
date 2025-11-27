@@ -1,0 +1,39 @@
+## Dataset
+
+### Source
+- **Competition:** [Kaggle Playground Series - Season 4, Episode 5](https://www.kaggle.com/competitions/playground-series-s4e5)
+- **Task:** Regression (Predict continuous flood probability)
+
+### Statistics
+
+| Characteristic | Value |
+|----------------|-------|
+| Total Instances | 1,863,262 |
+| Training Set | 1,117,957 (60%) |
+| Test Set | 745,305 (40%) |
+| Features | 20 numerical |
+| Target Variable | FloodProbability [0.285, 0.725] |
+
+### Features
+
+The dataset includes 20 predictive features organized into five categories:
+
+| Category | Features |
+|----------|----------|
+| **Environmental** | MonsoonIntensity, TopographyDrainage, ClimateChange, Watersheds, CoastalVulnerability |
+| **Water Management** | RiverManagement, DamsQuality, Siltation, DrainageSystems, WetlandLoss |
+| **Human Activities** | Deforestation, Urbanization, AgriculturalPractices, Encroachments, PopulationScore |
+| **Infrastructure** | DeterioratingInfrastructure, IneffectiveDisasterPreparedness, InadequatePlanning, PoliticalFactors |
+| **Natural Hazards** | Landslides |
+
+### Download Instructions
+
+```bash
+# Option 1: Using Kaggle API
+kaggle competitions download -c playground-series-s4e5
+unzip playground-series-s4e5.zip -d data/raw/
+
+# Option 2: Manual Download
+# Visit: https://www.kaggle.com/competitions/playground-series-s4e5/data
+# Download train.csv and test.csv to data/raw/
+'''
