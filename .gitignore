@@ -1,0 +1,332 @@
+# =============================================================================
+# Urban Flood Risk Prediction - Git Ignore Configuration
+# =============================================================================
+
+# =============================================================================
+# Python
+# =============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# =============================================================================
+# Jupyter Notebooks
+# =============================================================================
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Jupyter Notebook temporary files
+*.ipynb_tmp
+
+# =============================================================================
+# Data Files (Large Files - Not Tracked)
+# =============================================================================
+
+# Raw data files
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.gz
+data/raw/*.parquet
+data/raw/*.feather
+
+# Processed data files
+data/processed/*.csv
+data/processed/*.pkl
+data/processed/*.pickle
+data/processed/*.parquet
+data/processed/*.feather
+data/processed/*.npy
+data/processed/*.npz
+
+# Any large data files
+*.csv
+!results/metrics/*.csv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# =============================================================================
+# Model Files (Large Files - Not Tracked)
+# =============================================================================
+
+# Saved models
+results/models/*.pkl
+results/models/*.pickle
+results/models/*.joblib
+results/models/*.h5
+results/models/*.keras
+results/models/*.pt
+results/models/*.pth
+results/models/*.onnx
+*.model
+*.weights
+
+# TensorFlow / Keras
+*.pb
+saved_model/
+checkpoints/
+*.ckpt
+*.ckpt.*
+
+# XGBoost / LightGBM
+*.xgb
+*.lgb
+*.bin
+
+# =============================================================================
+# IDE and Editor Files
+# =============================================================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Atom
+.atom/
+
+# =============================================================================
+# OS Generated Files
+# =============================================================================
+
+# macOS
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Project Specific
+# =============================================================================
+
+# Kaggle API credentials
+kaggle.json
+.kaggle/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Log files
+logs/
+*.log
+log.txt
+
+# Output files (if too large)
+outputs/
+*.out
+
+# Experiments
+experiments/
+runs/
+
+# Weights & Biases
+wandb/
+
+# MLflow
+mlruns/
+
+# TensorBoard
+tensorboard_logs/
+lightning_logs/
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# Documentation Build
+# =============================================================================
+
+docs/_build/
+docs/api/
+site/
+
+# =============================================================================
+# Security (Never commit these!)
+# =============================================================================
+
+# API keys and secrets
+*.pem
+*.key
+secrets.yaml
+secrets.json
+credentials.json
+config.secret.*
